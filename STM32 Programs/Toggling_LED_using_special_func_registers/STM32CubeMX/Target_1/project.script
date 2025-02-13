@@ -1,0 +1,5 @@
+load STM32F401RETx
+project name STM32CubeMX
+project toolchain "MDK-ARM V5"
+project path "C:\Mas pdf projects\EX\Toggling_LED_using_special_func_registers\STM32CubeMX\Target_1"
+SetCopyLibrary "copy only"

@@ -1,0 +1,93 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.41.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Simran Naik, HP Inc., LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.41.0.0
+Toolchain Path:  C:\Users\SIMRAN NAIK\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.22
+Assembler:       Armasm.exe V6.22
+Linker/Locator:  ArmLink.exe V6.22
+Library Manager: ArmAr.exe V6.22
+Hex Converter:   FromElf.exe V6.22
+CPU DLL:         SARMCM3.DLL V5.41.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.14.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Mas pdf projects\EX\Displaying_75_on_7_segment_led\75.uvprojx
+Project File Date:  02/13/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.22', folder: 'C:\Users\SIMRAN NAIK\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target_1'
+assembling startup_stm32f401xe.s...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_it.c...
+compiling system_stm32f4xx.c...
+compiling main.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+STM32CubeMX/Target_1/STM32CubeMX/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c(948): warning: unused parameter 'Banks' [-Wunused-parameter]
+  948 | static void FLASH_MassErase(uint8_t VoltageRange, uint32_t Banks)
+      |                                                            ^
+STM32CubeMX/Target_1/STM32CubeMX/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c(1027): warning: unused parameter 'Banks' [-Wunused-parameter]
+ 1027 | static HAL_StatusTypeDef FLASH_OB_EnableWRP(uint32_t WRPSector, uint32_t Banks)
+      |                                                                          ^
+STM32CubeMX/Target_1/STM32CubeMX/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c(1063): warning: unused parameter 'Banks' [-Wunused-parameter]
+ 1063 | static HAL_StatusTypeDef FLASH_OB_DisableWRP(uint32_t WRPSector, uint32_t Banks)
+      |                                                                           ^
+3 warnings generated.
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal_exti.c...
+compiling stm32f4xx_hal.c...
+linking...
+Program Size: Code=4258 RO-data=454 RW-data=12 ZI-data=1640  
+".\Objects\75.axf" - 0 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.3.0.0.pack
+                Keil::STM32F4xx_DFP@3.0.0
+                STMicroelectronics STM32F4 Series Device Support
+   * Component: CubeMX Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  ./STM32CubeMX/Target_1/MX_Device
+  ./STM32CubeMX/Target_1/STM32CubeMX/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+  ./STM32CubeMX/Target_1/STM32CubeMX/Drivers/STM32F4xx_HAL_Driver/Inc
+  ./STM32CubeMX/Target_1/STM32CubeMX/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy
+  ./STM32CubeMX/Target_1/STM32CubeMX/Inc
+  C:/Users/SIMRAN NAIK/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+
+   * Component: Keil::Device:CubeMX@1.0.0
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>
