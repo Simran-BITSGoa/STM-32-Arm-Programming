@@ -1,0 +1,13 @@
+build-gen-idx:
+  generated-by: uVision version 5.41.0.0
+  generators:
+    - board: ""
+      device: STM32F401RETx
+      id: CubeMX
+      output: C:/Mas pdf projects/Echoing_received_data_from_uart4/STM32CubeMX/Target_1/
+      project-type: single-core
+      cbuild-gens:
+        - cbuild-gen: C:/Mas pdf projects/Echoing_received_data_from_uart4/echoing_rec_data_from_uart4.Target_1.cbuild-gen.yml
+          configuration: .Target_1
+          name: C:/Mas pdf projects/Echoing_received_data_from_uart4/STM32CubeMX/Target_1/echoing_rec_data_from_uart4.cgen.yml
+          project: echoing_rec_data_from_uart4
