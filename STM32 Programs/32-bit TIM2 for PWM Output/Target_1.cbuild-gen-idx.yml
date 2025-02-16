@@ -1,0 +1,13 @@
+build-gen-idx:
+  generated-by: uVision version 5.41.0.0
+  generators:
+    - board: ""
+      device: STM32F401RETx
+      id: CubeMX
+      output: C:/Users/SIMRAN NAIK/Documents/example/New folder/STM32CubeMX/Target_1/
+      project-type: single-core
+      cbuild-gens:
+        - cbuild-gen: C:/Users/SIMRAN NAIK/Documents/example/New folder/Using 32-bit TIM2 for PWM Output.Target_1.cbuild-gen.yml
+          configuration: .Target_1
+          name: C:/Users/SIMRAN NAIK/Documents/example/New folder/STM32CubeMX/Target_1/Using 32-bit TIM2 for PWM Output.cgen.yml
+          project: Using 32-bit TIM2 for PWM Output
