@@ -1,0 +1,460 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Madhur Varshney, BITS Pilani, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.39.0.0
+Toolchain Path:  C:\Keil_v5_39\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.21
+Assembler:       Armasm.exe V6.21
+Linker/Locator:  ArmLink.exe V6.21
+Library Manager: ArmAr.exe V6.21
+Hex Converter:   FromElf.exe V6.21
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.9.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\madhu\Downloads\Nucleo\NEXT_5\I2C_read\Read_one_byte_12C.uvprojx
+Project File Date:  02/17/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.21', folder: 'C:\Keil_v5_39\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+compiling stdin_itm.c...
+C:/Users/madhu/AppData/Local/Arm/Packs/ARM/CMSIS-Compiler/2.1.0/source/armcc/retarget_io.c(394): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+  394 |         ch = *buf++;
+      |               ^~~
+C:/Users/madhu/AppData/Local/Arm/Packs/ARM/CMSIS-Compiler/2.1.0/source/armcc/retarget_io.c(478): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+  478 |       *buf++ = (uint8_t)ch;
+      |        ^~~
+2 warnings generated.
+compiling retarget_io.c...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c(224): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  224 |         temp = GPIOx->AFR[position >> 3U];
+      |                ^~~~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c(227): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  227 |         GPIOx->AFR[position >> 3U] = temp;
+      |         ^~~~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c(243): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  243 |         temp = SYSCFG->EXTICR[position >> 2U];
+      |                ^~~~~~~~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xe.h(774): note: expanded from macro 'SYSCFG'
+  774 | #define SYSCFG              ((SYSCFG_TypeDef *) SYSCFG_BASE)
+      |                             ^
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c(246): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  246 |         SYSCFG->EXTICR[position >> 2U] = temp;
+      |         ^~~~~~~~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xe.h(774): note: expanded from macro 'SYSCFG'
+  774 | #define SYSCFG              ((SYSCFG_TypeDef *) SYSCFG_BASE)
+      |                             ^
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c(315): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  315 |       tmp = SYSCFG->EXTICR[position >> 2U];
+      |             ^~~~~~~~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xe.h(774): note: expanded from macro 'SYSCFG'
+  774 | #define SYSCFG              ((SYSCFG_TypeDef *) SYSCFG_BASE)
+      |                             ^
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c(329): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  329 |         SYSCFG->EXTICR[position >> 2U] &= ~tmp;
+      |         ^~~~~~~~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xe.h(774): note: expanded from macro 'SYSCFG'
+  774 | #define SYSCFG              ((SYSCFG_TypeDef *) SYSCFG_BASE)
+      |                             ^
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c(337): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  337 |       GPIOx->AFR[position >> 3U] &= ~(0xFU << ((uint32_t)(position & 0x07U) * 4U)) ;
+      |       ^~~~~~~~~~
+7 warnings generated.
+compiling stm32f4xx_hal_gpio.c...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c(215): warning: function 'HAL_NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+  215 | {
+      | ^
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c(81): warning: In file included from...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(29): warning: In file included from...
+./RTE/Device/STM32F401RETx\stm32f4xx_hal_conf.h(401): warning: In file included from...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_cortex.h(52): warning: padding struct 'MPU_Region_InitTypeDef' with 2 bytes to align 'BaseAddress' [-Wpadded]
+   52 |   uint32_t               BaseAddress;           /*!< Specifies the base address of the region to protect.                           */
+      |                          ^
+2 warnings generated.
+compiling stm32f4xx_hal_cortex.c...
+compiling stdout_itm.c...
+compiling stm32f4xx_hal.c...
+main.c(61): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   61 |     GPIOB->AFR[1] &= ~((0xF << 0) | (0xF << 4));  // Clear AF
+      |                   ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+main.c(102): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  102 |     I2C1->DR = (saddr << 1);  // Address + Write
+      |              ~  ~~~~~~^~~~
+main.c(104): warning: implicit conversion changes signedness: 'volatile uint32_t' (aka 'volatile unsigned int') to 'int' [-Wsign-conversion]
+  104 |     tmp = I2C1->SR2;  // Clear Address flag
+      |         ~ ~~~~~~^~~
+main.c(115): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  115 |     I2C1->DR = (saddr << 1) | 1;
+      |              ~ ~~~~~~~~~~~~~^~~
+main.c(118): warning: implicit conversion changes signedness: 'volatile uint32_t' (aka 'volatile unsigned int') to 'int' [-Wsign-conversion]
+  118 |     tmp = I2C1->SR2;  // Clear Address flag
+      |         ~ ~~~~~~^~~
+main.c(125): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  125 |     *data = I2C1->DR;
+      |           ~ ~~~~~~^~
+main.c(92): warning: variable 'tmp' set but not used [-Wunused-but-set-variable]
+   92 |     volatile int tmp;
+      |                  ^
+main.c(61): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   61 |     GPIOB->AFR[1] &= ~((0xF << 0) | (0xF << 4));  // Clear AF
+      |     ^~~~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xe.h(780): note: expanded from macro 'GPIOB'
+  780 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                             ^
+main.c(62): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   62 |     GPIOB->AFR[1] |= ((4 << 0) | (4 << 4));       // Set PB8, PB9 to AF4 (I2C1)
+      |     ^~~~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xe.h(780): note: expanded from macro 'GPIOB'
+  780 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                             ^
+9 warnings generated.
+compiling main.c...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c(42): warning: In file included from...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(29): warning: In file included from...
+./RTE/Device/STM32F401RETx\stm32f4xx_hal_conf.h(469): warning: In file included from...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_i2c.h(215): warning: padding struct 'I2C_HandleTypeDef' with 1 byte to align 'ErrorCode' [-Wpadded]
+  215 |   __IO uint32_t              ErrorCode;      /*!< I2C Error code                           */
+      |                              ^
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c(42): warning: In file included from...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(29): warning: In file included from...
+./RTE/Device/STM32F401RETx\stm32f4xx_hal_conf.h(397): warning: In file included from...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(148): warning: padding struct 'struct __DMA_HandleTypeDef' with 2 bytes to align 'Parent' [-Wpadded]
+  148 |   void                       *Parent;                                                          /*!< Parent object state                    */ 
+      |                               ^
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c(142): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  142 |     tmpreg = hi2c->Instance->FLTR;
+      |            ~ ~~~~~~~~~~~~~~~~^~~~
+3 warnings generated.
+compiling stm32f4xx_hal_i2c_ex.c...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c(97): warning: In file included from...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(29): warning: In file included from...
+./RTE/Device/STM32F401RETx\stm32f4xx_hal_conf.h(397): warning: In file included from...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(148): warning: padding struct 'struct __DMA_HandleTypeDef' with 2 bytes to align 'Parent' [-Wpadded]
+  148 |   void                       *Parent;                                                          /*!< Parent object state                    */ 
+      |                               ^
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c(289): warning: cast from function call of type 'uint32_t' (aka 'unsigned int') to non-matching type 'DMA_Base_Registers *' [-Wbad-function-cast]
+  289 |   regs = (DMA_Base_Registers *)DMA_CalcBaseAndBitshift(hdma);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c(351): warning: cast from function call of type 'uint32_t' (aka 'unsigned int') to non-matching type 'DMA_Base_Registers *' [-Wbad-function-cast]
+  351 |   regs = (DMA_Base_Registers *)DMA_CalcBaseAndBitshift(hdma);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c(977): warning: enumeration value 'HAL_DMA_XFER_ALL_CB_ID' not explicitly handled in switch [-Wswitch-enum]
+  977 |     switch (CallbackID)
+      |             ^~~~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c(1073): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+ 1073 |     default:
+      |     ^
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c(1191): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+ 1191 |   hdma->StreamIndex = flagBitshiftOffset[stream_number];
+      |                       ^~~~~~~~~~~~~~~~~~
+6 warnings generated.
+compiling stm32f4xx_hal_dma.c...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c(39): warning: In file included from...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(29): warning: In file included from...
+./RTE/Device/STM32F401RETx\stm32f4xx_hal_conf.h(397): warning: In file included from...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(148): warning: padding struct 'struct __DMA_HandleTypeDef' with 2 bytes to align 'Parent' [-Wpadded]
+  148 |   void                       *Parent;                                                          /*!< Parent object state                    */ 
+      |                               ^
+1 warning generated.
+compiling stm32f4xx_hal_dma_ex.c...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c(379): warning: unused parameter 'Regulator' [-Wunused-parameter]
+  379 | void HAL_PWR_EnterSLEEPMode(uint32_t Regulator, uint8_t SLEEPEntry)
+      |                                      ^
+1 warning generated.
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(301): warning: In file included from...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(29): warning: In file included from...
+./RTE/Device/STM32F401RETx\stm32f4xx_hal_conf.h(469): warning: In file included from...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_i2c.h(215): warning: padding struct 'I2C_HandleTypeDef' with 1 byte to align 'ErrorCode' [-Wpadded]
+  215 |   __IO uint32_t              ErrorCode;      /*!< I2C Error code                           */
+      |                              ^
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(301): warning: In file included from...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(29): warning: In file included from...
+./RTE/Device/STM32F401RETx\stm32f4xx_hal_conf.h(397): warning: In file included from...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(148): warning: padding struct 'struct __DMA_HandleTypeDef' with 2 bytes to align 'Parent' [-Wpadded]
+  148 |   void                       *Parent;                                                          /*!< Parent object state                    */ 
+      |                               ^
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(1093): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 1093 |       hi2c->pBuffPtr++;
+      |       ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(1105): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 1105 |         hi2c->pBuffPtr++;
+      |         ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(1250): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 1250 |           hi2c->pBuffPtr++;
+      |           ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(1272): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 1272 |           hi2c->pBuffPtr++;
+      |           ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(1282): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 1282 |           hi2c->pBuffPtr++;
+      |           ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(1304): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 1304 |           hi2c->pBuffPtr++;
+      |           ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(1323): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 1323 |           hi2c->pBuffPtr++;
+      |           ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(1333): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 1333 |           hi2c->pBuffPtr++;
+      |           ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(1352): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 1352 |         hi2c->pBuffPtr++;
+      |         ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(1364): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 1364 |           hi2c->pBuffPtr++;
+      |           ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(1471): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 1471 |       hi2c->pBuffPtr++;
+      |       ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(1483): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 1483 |         hi2c->pBuffPtr++;
+      |         ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(1588): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 1588 |       hi2c->pBuffPtr++;
+      |       ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(1600): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 1600 |         hi2c->pBuffPtr++;
+      |         ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(2545): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 2545 |       hi2c->pBuffPtr++;
+      |       ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(2557): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 2557 |         hi2c->pBuffPtr++;
+      |         ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(2704): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 2704 |           hi2c->pBuffPtr++;
+      |           ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(2726): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 2726 |           hi2c->pBuffPtr++;
+      |           ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(2736): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 2736 |           hi2c->pBuffPtr++;
+      |           ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(2758): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 2758 |           hi2c->pBuffPtr++;
+      |           ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(2777): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 2777 |           hi2c->pBuffPtr++;
+      |           ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(2787): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 2787 |           hi2c->pBuffPtr++;
+      |           ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(2806): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 2806 |         hi2c->pBuffPtr++;
+      |         ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(2818): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 2818 |           hi2c->pBuffPtr++;
+      |           ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(5333): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 5333 |         hi2c->pBuffPtr++;
+      |         ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(5365): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 5365 |       hi2c->pBuffPtr++;
+      |       ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(5477): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 5477 |       hi2c->pBuffPtr++;
+      |       ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(5530): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 5530 |       hi2c->pBuffPtr++;
+      |       ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(5557): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 5557 |         hi2c->pBuffPtr++;
+      |         ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(5596): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 5596 |         hi2c->pBuffPtr++;
+      |         ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(5642): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 5642 |     hi2c->pBuffPtr++;
+      |     ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(5663): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 5663 |     hi2c->pBuffPtr++;
+      |     ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(5695): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 5695 |     hi2c->pBuffPtr++;
+      |     ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(5704): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 5704 |     hi2c->pBuffPtr++;
+      |     ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(5740): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 5740 |     hi2c->pBuffPtr++;
+      |     ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(5989): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 5989 |     hi2c->pBuffPtr++;
+      |     ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(6027): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 6027 |     hi2c->pBuffPtr++;
+      |     ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(6051): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 6051 |     hi2c->pBuffPtr++;
+      |     ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(6089): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 6089 |     hi2c->pBuffPtr++;
+      |     ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(6239): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 6239 |       hi2c->pBuffPtr++;
+      |       ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(6252): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 6252 |       hi2c->pBuffPtr++;
+      |       ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(6457): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 6457 |           hi2c->pBuffPtr++;
+      |           ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(6482): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 6482 |       hi2c->pBuffPtr++;
+      |       ~~~~~~^~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c(6504): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+ 6504 |       hi2c->pBuffPtr++;
+      |       ~~~~~~^~~~~~~~
+46 warnings generated.
+compiling stm32f4xx_hal_i2c.c...
+RTE/Device/STM32F401RETx/system_stm32f4xx.c(263): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  263 |   tmp = AHBPrescTable[((RCC->CFGR & RCC_CFGR_HPRE) >> 4)];
+      |         ^~~~~~~~~~~~~
+1 warning generated.
+compiling system_stm32f4xx.c...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c(23): warning: In file included from...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(29): warning: In file included from...
+./RTE/Device/STM32F401RETx\stm32f4xx_hal_conf.h(385): warning: In file included from...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_rcc.h(31): warning: In file included from...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h(403): warning: padding size of 'RCC_PeriphCLKInitTypeDef' with 3 bytes to alignment boundary [-Wpadded]
+  403 | typedef struct
+      |         ^
+1 warning generated.
+compiling stm32f4xx_hal_rcc_ex.c...
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c(719): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  719 |   SystemCoreClock = HAL_RCC_GetSysClockFreq() >> AHBPrescTable[(RCC->CFGR & RCC_CFGR_HPRE)>> RCC_CFGR_HPRE_Pos];
+      |                                                  ^~~~~~~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c(955): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  955 |   return (HAL_RCC_GetHCLKFreq() >> APBPrescTable[(RCC->CFGR & RCC_CFGR_PPRE1)>> RCC_CFGR_PPRE1_Pos]);
+      |                                    ^~~~~~~~~~~~~
+C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c(967): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  967 |   return (HAL_RCC_GetHCLKFreq()>> APBPrescTable[(RCC->CFGR & RCC_CFGR_PPRE2)>> RCC_CFGR_PPRE2_Pos]);
+      |                                   ^~~~~~~~~~~~~
+3 warnings generated.
+compiling stm32f4xx_hal_rcc.c...
+assembling startup_stm32f401xe.s...
+linking...
+Program Size: Code=1092 RO-data=420 RW-data=0 ZI-data=1632  
+".\Objects\Read_one_byte_12C.axf" - 0 Error(s), 82 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS-Compiler.2.1.0.pack
+                ARM::CMSIS-Compiler@2.1.0
+                CMSIS Compiler extensions for Arm Compiler, GCC, Clang, and IAR Compiler
+   * Component: STDIN Version: 1.1.0
+   * Component: STDOUT Version: 1.1.0
+   * Component: CORE Version: 1.1.0
+   * Component: ITM Version: 1.1.0
+   * Component: ITM Version: 1.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil::STM32F4xx_DFP@2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: STM32Cube Framework Version: 1.0.0
+   * Component: Classic Version: 1.8.1
+   * Component: Common Version: 1.8.1
+   * Component: Cortex Version: 1.8.1
+   * Component: DMA Version: 1.8.1
+   * Component: GPIO Version: 1.8.1
+   * Component: I2C Version: 1.8.1
+   * Component: PWR Version: 1.8.1
+   * Component: RCC Version: 1.8.1
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/STM32F401RETx
+  ./RTE/_Target_1
+  C:/Users/madhu/AppData/Local/Arm/Packs/ARM/CMSIS-Compiler/2.1.0/include
+  C:/Users/madhu/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+  C:/Users/madhu/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::CMSIS-Compiler:STDIN(API)@1.1.0
+      Include file:  include/retarget_stdin.h
+
+   * Component: ::CMSIS-Compiler:STDOUT(API)@1.1.0
+      Include file:  include/retarget_stdout.h
+
+   * Component: ::Device:STM32Cube Framework(API)@1.0.0
+
+   * Component: ARM::CMSIS-Compiler:CORE@1.1.0
+      Source file:   source/armcc/retarget_io.c
+
+   * Component: ARM::CMSIS-Compiler:STDIN:ITM@1.1.0
+      Source file:   source/stdin_itm.c
+
+   * Component: ARM::CMSIS-Compiler:STDOUT:ITM@1.1.0
+      Source file:   source/stdout_itm.c
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+
+   * Component: Keil::Device:STM32Cube Framework:Classic@1.8.1
+      Source file:   MDK/Templates/Src/stm32f4xx_hal_msp.c
+      Source file:   MDK/Templates_LL/Src/main.c
+      Include file:  MDK/Templates/Inc/stm32f4xx_it.h
+      Source file:   MDK/Templates/Src/stm32f4xx_it.c
+      Include file:  CMSIS/Driver/Config/RTE_Device.h
+      Source file:   MDK/Templates/Src/main.c
+      Include file:  MDK/Templates_LL/Inc/main.h
+      Include file:  MDK/Templates/Inc/main.h
+      Include file:  MDK/Templates/Inc/stm32f4xx_hal_conf.h
+
+   * Component: Keil::Device:STM32Cube HAL:Common@1.8.1
+      Include file:  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
+
+   * Component: Keil::Device:STM32Cube HAL:Cortex@1.8.1
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
+
+   * Component: Keil::Device:STM32Cube HAL:DMA@1.8.1
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:GPIO@1.8.1
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
+
+   * Component: Keil::Device:STM32Cube HAL:I2C@1.8.1
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c
+
+   * Component: Keil::Device:STM32Cube HAL:PWR@1.8.1
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:RCC@1.8.1
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
+      Source file:   Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
+
+   * Component: Keil::Device:Startup@2.6.3
+      Source file:   MDK/Device/Source/ARM/STM32F4xx_OTP.s
+      Include file:  Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f401xe.s
+      Source file:   MDK/Device/Source/ARM/STM32F401xx_OPT.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
